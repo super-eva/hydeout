@@ -43,8 +43,8 @@
     let prop1 = Symbol();
     let prop2 = Symbol();
     let a = {}
-    a[prop1] = '1'
-    a[prop2] = '2'
+    a[prop1] = 1
+    a[prop2] = 2
     console.log(a[prop1]) //1
     console.log(a[prop2]) //2
     ```
