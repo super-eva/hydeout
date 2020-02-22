@@ -45,8 +45,8 @@
     let a = {}
     a[prop1] = '1'
     a[prop2] = '2'
-    console.log(a[prop1])
-    console.log(a[prop2])
+    console.log(a[prop1]) //1
+    console.log(a[prop2]) //2
     ```
     * function is subtype of object
     ```js
