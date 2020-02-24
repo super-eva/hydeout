@@ -1,6 +1,6 @@
 * Data Types (8)
   * number - integer and floating numbers
-    * special numeric values ```Infinity``` ```-Infinity``` ```NaN```
+    * special numeric values ```Infinity``` ```-Infinity``` ```NaN``` 
     ```js
     console.log(typeof(Infinity)) //number
     console.log(typeof(NaN)) //number
