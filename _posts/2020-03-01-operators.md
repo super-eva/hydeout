@@ -43,11 +43,11 @@
   console.log(c) //3
   console.log(b) //2
   ```
-* `%`
+* Remainder `%`
 ```js
 console.log(10 % 3) // 1
 ```
-* `**`
+* Exponentiation `**`
 ```js
 console.log(10 ** 3) // 1000
 ```
