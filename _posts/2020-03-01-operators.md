@@ -20,7 +20,35 @@
   console.log(+'') //0
   console.log(+true) //1
   ```
-  * unary `+` applied to values before the binary ones
+  * unary `+` applied to values before the binary ones [(Operator Precedence)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
   ```js
   console.log(+'1' + +'2') //3
   ```
+* Assignment `=`
+  * low priority 
+  * can chain assignments, Chained assignments evaluate from right to left.
+  ```js
+  a = b = c = 2 + 2;
+  console.log(a) //4
+  console.log(a) //4
+  console.log(a) //4
+  ```
+  ```js
+  let a = 1
+  let b = 2
+  let c = a + (b = a + 1) 
+  //return a + 1 to b
+  //return a + b to c
+  
+  console.log(c) //3
+  console.log(b) //2
+  ```
+* `%`
+* `**`
+* `++` `--`
+* Bitwise operators
+* Modify-in-place
+* `,`
+
+Reference: [Javascript.info/Operators](https://javascript.info/operators)
+
