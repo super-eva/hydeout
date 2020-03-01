@@ -44,8 +44,24 @@
   console.log(b) //2
   ```
 * `%`
+```js
+console.log(10 % 3) // 1
+```
 * `**`
+```js
+console.log(10 ** 3) // 1000
+```
 * `++` `--`
+  * Precedence is higher than most other arithmetical operations.
+  * can be add before or after variable
+  ```js
+  let a = 1
+  console.log(++a) //2
+  ```
+  ```js
+  let a = 1
+  console.log(a++) //1
+  ```
 * Bitwise operators
 * Modify-in-place
 * `,`
