@@ -62,9 +62,19 @@ console.log(10 ** 3) // 1000
   let a = 1
   console.log(a++) //1
   ```
-* Bitwise operators
-* Modify-in-place
+* [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+* Modify-in-place `+=` `-=`
+  ```js
+  let n = 2;
+  n += 5; // now n = 7 (same as n = n + 5)
+  ```
 * `,`
+  * Each of them is evaluated but only the result of the last one is returned.
+  ```js
+  let a = (1 + 2, 3 + 4);
+  console.log( a ); // 7 (the result of 3 + 4)
+  ```
+  * has lower precedence than `=`
 
 Reference: [Javascript.info/Operators](https://javascript.info/operators)
 
