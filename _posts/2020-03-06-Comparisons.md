@@ -53,6 +53,6 @@
   ```
 
 **Note:**
-Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. 
+Don’t use comparisons `>=` `>` `<` `<=` with a variable which may be null/undefined, unless you’re really sure of what you’re doing. 
 
 Reference: [Javascript.info/comparisons](https://javascript.info/comparison)
