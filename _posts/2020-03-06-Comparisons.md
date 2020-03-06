@@ -1,14 +1,12 @@
 * String comparison
   * compare letter by letter (letter's Unicode)
   * compare rules:
-  ```
-  The algorithm to compare two strings is simple:
-    1. Compare the first character of both strings.
-       * If the first character from the first string is greater (or less) than the other string’s, then the first string is greater (or less) than the second. We’re done.
-       * Otherwise, if both strings’ first characters are the same, compare the second characters the same way.
-    2. Repeat until the end of either string.
-    3. If both strings end at the same length, then they are equal. Otherwise, the longer string is greater.
-  ```
+   > The algorithm to compare two strings is simple:
+   >  1. Compare the first character of both strings.
+   >     * If the first character from the first string is greater (or less) than the other string’s, then the first string is greater (or less) than the second. We’re done.
+   >     * Otherwise, if both strings’ first characters are the same, compare the second characters the same way.
+   >  2. Repeat until the end of either string.
+   >  3. If both strings end at the same length, then they are equal. Otherwise, the longer string is greater.
   ```js
   console.log('Z' > 'A') //true
   console.log('abe' > 'abc') //true
