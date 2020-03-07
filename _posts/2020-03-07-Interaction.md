@@ -7,6 +7,7 @@ alert("Hello");
 > The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons, etc. 
 > until they have dealt with the window. In this case – until they press “OK”.
 
+Note: The call to alert does not return a value. Or, in other words, it returns `undefined`.
 
 2. `prompt` - shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
 ```js
