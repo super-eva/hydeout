@@ -1,5 +1,5 @@
 * Multiple variables can be declared in one line ```let a=1, b=2, c=3;```, but it's not recommeded.
-  For the readibility, it's better to seperate it to different lines like below.
+  For the readability, it's better to separate it to different lines like below.
   ```js
   let a = 1;
   let b = 2;
@@ -10,7 +10,7 @@
    * The scope ```var``` vs ```let``` are different, ```var``` is valid in function scope, ```let``` is in block scope, 
      e.g. ```for``` ```if```. ```let``` is more recommended since it won't affect the outer scope.
      ```js
-     function(){
+     (function test(){
         var a = 1;
         if( a == 1 ){
           var b = 2;
@@ -18,7 +18,7 @@
         }
         console.log(b); // 2 
         console.log(c); // ReferenceError: c is not defined
-     }();
+     })();
      ```
    * ```const``` is to decalre constants, it cannot be reassigned
 * Function languages
