@@ -93,6 +93,8 @@ let str = arr.join(';'); // glue the array into a string using ;
 alert( str ); // Bilbo;Gandalf;Nazgul
 ```
 * arr.reduce
+  *  if there’s no initial, then reduce takes the first element of the array as the initial value and starts the iteration from the 2nd element. (**not recommend**)
+  * arr.reduceRight goes from right to left
 ```js
 let value = arr.reduce(function(accumulator, item, index, array) {
   // ...
@@ -112,3 +114,7 @@ the third call |	3	| 3	| 6
 the fourth call	| 6	| 4	| 10
 the fifth call	|10 |	5	| 15
    
+* Array.isArray(value)
+   * typeof cannot use to distinguish array, use isArray
+   
+Reference: [javascript.info/array-methods](https://javascript.info/array-methods)
