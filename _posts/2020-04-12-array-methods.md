@@ -83,4 +83,14 @@ function compareNumeric(a, b) {
 let arr = [ 1, 2, 15 ];
 arr.sort(compareNumeric);
 ```
+* arr.reverse();
+  * retuen array in reverse order
+* arr.join(glue)
+  *  str.split(delim) can separate string into array
+```js
+let arr = ['Bilbo', 'Gandalf', 'Nazgul'];
+let str = arr.join(';'); // glue the array into a string using ;
+alert( str ); // Bilbo;Gandalf;Nazgul
+```
+
    
