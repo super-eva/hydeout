@@ -92,5 +92,23 @@ let arr = ['Bilbo', 'Gandalf', 'Nazgul'];
 let str = arr.join(';'); // glue the array into a string using ;
 alert( str ); // Bilbo;Gandalf;Nazgul
 ```
+* arr.reduce
+```js
+let value = arr.reduce(function(accumulator, item, index, array) {
+  // ...
+}, [initial]);
+```
+```js
+let arr = [1, 2, 3, 4, 5];
+let result = arr.reduce((sum, current) => sum + current, 0);
+alert(result); // 15
+```
 
+iteration | sum |	current |	result
+-- |-- |  --    | --
+the first call |	0 |	1 |	1
+the second call|	1	| 2	| 3
+the third call |	3	| 3	| 6
+the fourth call	| 6	| 4	| 10
+the fifth call	|10 |	5	| 15
    
