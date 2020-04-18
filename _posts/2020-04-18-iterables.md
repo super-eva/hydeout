@@ -41,5 +41,32 @@ while (true) {
 }
 ```
 ### Iterables and array-likes
+* Both of them are not arrays, but can use `for..of`. They don't have `push` `pop` functions.
 * Iterables are objects that implement the Symbol.iterator method, as described above.
 * Array-likes are objects that have indexes and length, so they look like arrays.
+  ```js
+  let arrayLike = { // has indexes and length => array-like
+    0: "Hello",
+    1: "World",
+    length: 2
+  };
+
+  // Error (no Symbol.iterator)
+  for (let item of arrayLike) {}
+  ```
+  
+ ### Array.from
+ * Turn an iterable or array-like object to real `array`
+ * `Array.from(obj[, mapFn, thisArg])`, second argument accepts an function to execute for each element beofore adding to the array
+  ```js
+  let arrayLike = {
+    0: "Hello",
+    1: "World",
+    length: 2
+  };
+
+  let arr = Array.from(arrayLike); // (*)
+  alert(arr.pop()); // World (method works)
+  ```
+ Reference: [javascript.info/iterable](https://javascript.info/iterable)
+  
