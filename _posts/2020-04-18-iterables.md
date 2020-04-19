@@ -57,7 +57,7 @@ while (true) {
   
  ### Array.from
  * Turn an iterable or array-like object to real `array`
- * `Array.from(obj[, mapFn, thisArg])`, second argument accepts an function to execute for each element beofore adding to the array
+ * `Array.from(obj, mapFn, thisArg)`, second argument accepts an function to execute for each element beofore adding to the array
   ```js
   let arrayLike = {
     0: "Hello",
